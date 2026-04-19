@@ -7,9 +7,15 @@ body {
 nav {
     display: flex;
     justify-content: space-evenly;
+    text-decoration: none;
 }
 
-h1{
+.nav-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
     text-align: center;
     background-color: rgb(243, 236, 225);
     padding: 30px 10px;
@@ -45,8 +51,6 @@ h2 {
     padding: 20px 20px;
     margin: 10px 30px;
 }
-
-
 
 
 #connect {
