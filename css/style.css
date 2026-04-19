@@ -1,6 +1,33 @@
-h1 {
+body {
+    background-color: rgb(166, 173, 190);
+    color: rgb(54, 53, 52);
+}
+
+h1{
     text-align: center;
     background-color: rgb(243, 236, 225);
     padding: 30px 10px;
-    color: rgb(29, 28, 27);
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#about {
+    background-color: rgb(243, 236, 225);
+    padding: 20px 20px;
+    margin-bottom: 50px;
+}
+
+#experience {
+    background-color: rgb(243, 236, 225);
+    padding: 20px 10px;
+    margin-bottom: 50px;
+}
+
+
+#connect {
+    padding: 20px 20px;
+    background-color: rgb(243, 236, 225);
 }
