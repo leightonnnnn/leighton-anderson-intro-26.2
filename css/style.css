@@ -4,6 +4,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 h1{
     text-align: center;
     background-color: rgb(243, 236, 225);
