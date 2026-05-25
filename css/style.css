@@ -67,3 +67,16 @@ h2 {
 .connect-column {
     padding: 5px 30px;
 }
+
+#skills {
+    background-color: rgb(243, 236, 225);
+    padding: 20px 10px;
+}
+
+#skills > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border:solid 1px rgb(169, 169, 172);
+    padding: 20px 10px;
+}
