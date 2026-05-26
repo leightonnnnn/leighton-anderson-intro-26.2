@@ -30,6 +30,10 @@
                 <h2><a class="nav-link" href="#connect">Connect</a></h2>
             </section>
 
+            <section class="nav-column">
+                <h2><a class="nav-link" href="#form">Form</a></h2>
+            </section>
+
         </nav>
         <h1>Leighton Anderson</h1>
         <section id="about">
@@ -67,7 +71,25 @@
         <section id="connect">
             <p class="connect-column"><a href="https://linkedin.com/in/leightonanderson" target="_blank"><img src="\images\linkedin_logo.png" width="30px"></a></p>
             <p class="connect-column"><a href="https://github.com/leightonnnnn" target="_blank"><img src="\images\github_logo.webp" width="30px"></a></p>
-                
+        </section>
+        <section id="form">
+            <h2>Leave a Message</h2>
+            <form name="leave_message">
+                <label id="label" for="usersForm">Enter your information:</label>
+                <br>
+                <input type="text" name="usersName" required="true"></input>
+                <br>
+                <input type="email" name="usersEmail" required="true"></input>
+                <br>
+                <textarea name="usersMessage" required="true"></textarea>
+                <br>
+                <button type="submit">Submit</button>
+
+            </form>
+        </section>
+        <section id="messages">
+            <h2>Messages</h2>
+            <ul></ul>
         </section>
         <script src="js/index.js"></script>
     </body>
