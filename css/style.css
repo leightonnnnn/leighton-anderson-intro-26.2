@@ -80,3 +80,12 @@ h2 {
     border:solid 1px rgb(169, 169, 172);
     padding: 20px 10px;
 }
+
+form {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    background-color: rgb(243, 236, 225);
+}
