@@ -29,7 +29,7 @@ messageForm.addEventListener('submit', function(event){
     let messageSection = document.getElementById('messages');
     let messageList = messageSection.querySelector('ul');
     let newMessage = document.createElement('li');
-    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span>(${usersEmail})</span> <p>${usersMessage}</p>`;
+    newMessage.innerHTML = `<a href="mailto:${usersEmail}">${usersName}</a> <span>${usersMessage}</span>`;
     let removeButton = document.createElement('button');
     removeButton.textContent = 'remove';
     removeButton.type = 'button';
