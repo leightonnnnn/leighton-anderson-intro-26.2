@@ -41,3 +41,8 @@ messageForm.addEventListener('submit', function(event){
     messageList.appendChild(newMessage);
     event.target.reset();
 });
+
+// API
+fetch('https://api.github.com/users/leightonnnnn/repos')
+    .then(response => response.json())
+    
