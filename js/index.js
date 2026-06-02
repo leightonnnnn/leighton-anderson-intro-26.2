@@ -45,5 +45,17 @@ messageForm.addEventListener('submit', function(event){
 // API
 fetch('https://api.github.com/users/leightonnnnn/repos')
     .then(response => response.json())
-    .then(repositories => { console.log(repositories); })
+    .then(repositories => { console.log(repositories);
+
+        let projectSection = document.getElementById('projects');
+        let projectList = projectSection.querySelector('ul');
+
+        for (let i = 0; i < repositories.length; i++){
+            let project = document.createElement('li');
+            project.innerText = repositories[i].name;
+            projectList.appendChild(project);
+        }
+    })
     .catch(error => console.error('Error fetching repositories:', error));
+
+// Display Repositories
