@@ -45,5 +45,4 @@ messageForm.addEventListener('submit', function(event){
 // API
 fetch('https://api.github.com/users/leightonnnnn/repos')
     .then(response => response.json())
-    .then(repositories = response.json());
-    console.log(repositories);
+    .then(repositories => { console.log(repositories); });
