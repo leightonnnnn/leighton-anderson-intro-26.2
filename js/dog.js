@@ -33,7 +33,8 @@ breedList.addEventListener('click', function(){
         .then(response => response.json())
         .then(breeds => {
             dogData.innerHTML = '';
-            for (let i = 0; i < breeds.length; i++){
+            breeds.sort(() => Math.random() - 0.5);
+            for (let i = 0; i < 10; i++){
                 const breedItem = document.createElement('p');
                 breedItem.textContent = breeds[i].name;
                 dogData.appendChild(breedItem);
