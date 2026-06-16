@@ -1,4 +1,5 @@
-const API_KEY = 'YOUR_API_KEY_HERE';
+// DogAPI
+const API_KEY = 'live_i9gS6HJNoggLDLQg9saXVbttZOnkegOgwSDAvOWfqE5J5WZ8p5DP1Wc4qdI0O7iP';
 const dogData = document.getElementById('dogData');
 const randomDog = document.getElementById('randomDog');
 const breedList = document.getElementById('breedList');
@@ -32,14 +33,10 @@ breedList.addEventListener('click', function(){
         .then(response => response.json())
         .then(breeds => {
             dogData.innerHTML = '';
-
             breeds.sort(() => Math.random() - 0.5);
-            const randomTenBreeds = breeds.slice(0, 10);
-            randomTenBreeds.sort((a, b) => a.name.localeCompare(b.name));
-
-            for (let i = 0; i < randomTenBreeds.length; i++) {
+            for (let i = 0; i < 10; i++){
                 const breedItem = document.createElement('p');
-                breedItem.textContent = randomTenBreeds[i].name;
+                breedItem.textContent = breeds[i].name;
                 dogData.appendChild(breedItem);
             }
         })
