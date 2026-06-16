@@ -3,19 +3,14 @@
     <head>
         <title>Leighton Anderson's Portfolio</title>
         <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <nav>
-            <section class="skills nav-column">
-                <h2>Skills</h2>
-            </section>
 
-            <section id="projects" class="projects nav-column">
-                <h2>Projects</h2>
-                <ul>
-
-                </ul>
+            <section id="projects" class="projects nav-column dropdown">
+                <h2><a class="nav-link" href="#">Projects</a></h2>
+                <ul id="projects-dropdown" class="dropdown-content"> </ul>
             </section>
 
             <section class="nav-column">
@@ -25,13 +20,21 @@
             <section class="nav-column">
                 <h2><a class="nav-link" href="#experience">Experience</a></h2>
             </section>
+            
+            <section class="skills nav-column">
+                <h2><a class="nav-link" href="#skills">Skills</a></h2>
+            </section>
 
             <section class="nav-column">
                 <h2><a class="nav-link" href="#connect">Connect</a></h2>
             </section>
 
             <section class="nav-column">
-                <h2><a class="nav-link" href="#form">Form</a></h2>
+                <h2><a class="nav-link" href="#form">Leave a Message</a></h2>
+            </section>
+
+            <section class="nav-column">
+                <h2><a class="nav-link" href="dog.html">Open API Page</a></h2>
             </section>
 
             <section class="nav-column">
@@ -39,14 +42,16 @@
             </section>
 
         </nav>
+
         <h1>Leighton Anderson</h1>
         <section id="about">
             <h2>About</h2>
-            <p>I strive to be a software developer.</p>
+            <p>I strive to be a cloud engineer with software development skills. I am currently pursuing a degree in Cloud and Network Engineering at WGU. 
+                I hope to leverage my technical background to contribute to innovative cloud solutions.</p>
         </section> 
         
-        <h2 id="experience-h2">Experience</h2>
-        <section id="experience">
+        <h2 id="experience">Experience</h2>
+        <section class="experience">
             <div class="experience-column">
                 <p>C++ and MATLAB</p>
                 <p>I was a teaching assistant at UT Dallas for C++ and MATLAB course. I helped students with their assignments and provided additional support during office hours.</p>
@@ -73,8 +78,8 @@
 
         <h2 id="connect-h2">Connect</h2>
         <section id="connect">
-            <p class="connect-column"><a href="https://linkedin.com/in/leightonanderson" target="_blank"><img src="\images\linkedin_logo.png" width="30px"></a></p>
-            <p class="connect-column"><a href="https://github.com/leightonnnnn" target="_blank"><img src="\images\github_logo.webp" width="30px"></a></p>
+            <p class="connect-column"><a href="https://linkedin.com/in/leightonanderson" target="_blank"><img src="images/linkedin_logo.png" width="30px" alt="LinkedIn Logo"></a></p>
+            <p class="connect-column"><a href="https://github.com/leightonnnnn" target="_blank"><img src="images/github_logo.webp" width="30px" alt="GitHub Logo"></a></p>
         </section>
         <section id="form">
             <h2>Leave a Message</h2>

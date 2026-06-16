@@ -8,7 +8,7 @@ footer.appendChild(copyright);
 document.body.appendChild(footer);
 
 //Add skills to skills section
-let skills = ['HTML', 'CSS', 'JavaScript'];
+let skills = ['AWS', 'Cloud Networking', 'HTML', 'CSS', 'JavaScript'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 
@@ -47,12 +47,17 @@ fetch('https://api.github.com/users/leightonnnnn/repos')
     .then(response => response.json())
     .then(repositories => { console.log(repositories);
 
-        let projectSection = document.getElementById('projects');
-        let projectList = projectSection.querySelector('ul');
+        let projectList = document.getElementById('projects-dropdown');
 
         for (let i = 0; i < repositories.length; i++){
             let project = document.createElement('li');
-            project.innerText = repositories[i].name;
+            let projectLink = document.createElement('a');
+
+            projectLink.href = repositories[i].html_url;
+            projectLink.target = '_blank';
+            projectLink.textContent = repositories[i].name;
+
+            project.appendChild(projectLink);
             projectList.appendChild(project);
         }
     })
