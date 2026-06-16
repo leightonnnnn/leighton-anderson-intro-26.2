@@ -8,7 +8,7 @@ footer.appendChild(copyright);
 document.body.appendChild(footer);
 
 //Add skills to skills section
-let skills = ['HTML', 'CSS', 'JavaScript'];
+let skills = ['AWS', 'Cloud Networking', 'HTML', 'CSS', 'JavaScript'];
 let skillsSection = document.getElementById('skills');
 let skillsList = skillsSection.querySelector('ul');
 
