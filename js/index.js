@@ -47,8 +47,7 @@ fetch('https://api.github.com/users/leightonnnnn/repos')
     .then(response => response.json())
     .then(repositories => { console.log(repositories);
 
-        let projectSection = document.getElementById('projects');
-        let projectList = projectSection.querySelector('ul');
+        let projectList = document.getElementById('projects-dropdown');
 
         for (let i = 0; i < repositories.length; i++){
             let project = document.createElement('li');
