@@ -52,7 +52,13 @@ fetch('https://api.github.com/users/leightonnnnn/repos')
 
         for (let i = 0; i < repositories.length; i++){
             let project = document.createElement('li');
-            project.innerText = repositories[i].name;
+            let projectLink = document.createElement('a');
+
+            projectLink.href = repositories[i].html_url;
+            projectLink.target = '_blank';
+            projectLink.textContent = repositories[i].name;
+
+            project.appendChild(projectLink);
             projectList.appendChild(project);
         }
     })
