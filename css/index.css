@@ -62,6 +62,7 @@ h2 {
     padding: 10px 20px;
     background-color: rgb(243, 236, 225);
     display: flex;
+    justify-content: space-evenly;
 }
 
 .connect-column {
