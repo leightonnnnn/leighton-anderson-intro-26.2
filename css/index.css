@@ -130,3 +130,16 @@ form {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
+#messages li {
+    background-color: white;
+    padding: 10px 5px;;
+    margin: 10px 10px 10px 0px;
+    display: inline-block;
+    border-radius: 5px;
+
+}
+
+#messages button {
+    margin-left: 10px;
+}
