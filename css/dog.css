@@ -11,6 +11,12 @@ nav a {
     font-weight: bold;
 }
 
+body {
+    background-color: rgb(243, 236, 225);
+    color: rgb(54, 53, 52);
+    font-family: 'Open Sans', sans-serif;
+}
+
 #dogData img {
     width: 500px;
     height: auto;
